@@ -1,0 +1,177 @@
+.classarea {
+  background-color: var(--color4);
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 1300px;
+  justify-content: center;
+  margin: auto;
+  padding: 1rem;
+}
+
+.class-title {
+  font-family: OpenDyslexic;
+  line-height: 1.2;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color2);
+}
+
+.class-subtitle {
+  max-width: 1000px;
+  margin: auto;
+  text-align: right;
+  font-size: 3em;
+  color: var(--color1);
+}
+dl {
+  margin: auto;
+  margin-top: 1rem;
+  max-width: 1000px;
+  padding: 1rem;
+  box-sizing: border-box;
+  /* background-color: aqua; */
+}
+
+dt {
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 60ch;
+  line-height: 1.2;
+  padding: 0.8rem;
+  color: var(--color6);
+  text-align: left;
+  /* background-color: aliceblue; */
+}
+
+dd {
+  text-align: left;
+  margin-left: 0px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  padding: 0.8rem;
+  color: var(--color1);
+  margin-bottom: 1rem;
+  /* background-color: salmon; */
+}
+
+textarea {
+  display: block;
+  justify-content: center;
+  margin: 10px;
+  font-size: 1.4rem;
+  padding: 1rem;
+  width: 90%;
+  height: 10rem;
+  font-family: Pt Sans, sans-serif;
+  margin-bottom: 5rem;
+}
+
+.class-exercise {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--color1);
+}
+
+.class-exercise img {
+  max-width: 3rem;
+  padding: 0px;
+  padding-right: 0.5rem;
+}
+
+.example-class {
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 60ch;
+  line-height: 1.2;
+  padding: 0.8rem;
+  color: var(--color1);
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
+  .classarea {
+    /* background-color: blue; */
+    width: fit-content;
+  }
+  dl {
+    /* background-color: aqua; */
+    max-width: 900px;
+  }
+
+  .class-exercise img {
+    max-width: 2rem;
+  }
+
+  .example-class {
+    font-size: 1.5rem;
+    padding: 0px;
+    margin-top: 0px;
+    text-align: center;
+
+    /* background-color: aqua; */
+  }
+
+  .class-subtitle {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .class-title {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    /* background-color: antiquewhite; */
+  }
+}
+
+@media (max-width: 1000px) {
+  dt {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  dd {
+    font-size: 1.12rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    line-height: 1.2;
+  }
+}
+
+@media print {
+  dl {
+    max-width: 900px;
+  }
+
+  .class-exercise img {
+    max-width: 1rem;
+  }
+
+  .example-class {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .class-subtitle {
+    text-align: center;
+    font-size: 1em;
+  }
+  .class-title {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  dt {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 50ch;
+    line-height: 1.2;
+  }
+
+  dd {
+    font-size: 1rem;
+  }
+}

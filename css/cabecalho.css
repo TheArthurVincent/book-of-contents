@@ -1,0 +1,12 @@
+.cabecalho {
+  display: flex;
+  font-size: 1.2rem;
+  place-content: center;
+  gap: 1rem;
+  color: var(--color5);
+  font-family: fira sans;
+  font-weight: 600;
+  background: var(--color1);
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}

@@ -1,0 +1,5 @@
+#59697A – Azul
+#6FAC46 – Verde
+#131313 – Cinza
+#FFFFFF – Branco
+#f9f9f9; - Branco 2

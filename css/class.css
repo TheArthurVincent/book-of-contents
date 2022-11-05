@@ -1,0 +1,476 @@
+:root {
+  --color1: #59697a;
+  --color2: #6fac46;
+  --color3: #131313;
+  --color4: #ffffff;
+  --color5: #e9e9e9;
+  --color6: #252525;
+  --color7: #d9d9d9;
+}
+
+.subtitulinho {
+  margin-top: 1px;
+  font-size: 1.3rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* #1 */
+.class-section {
+  padding: 0px 0rem;
+  max-width: none;
+  margin: auto;
+}
+.class-audio {
+  place-self: center;
+  margin-top: 3rem;
+}
+
+.class-container {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 1300px;
+  justify-content: space-between;
+  margin: auto;
+  padding: 1rem;
+  align-items: center;
+}
+
+.class-section-title {
+  font-size: 15rem;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--color4);
+}
+.class-content {
+  align-self: flex-start;
+  /* background-color: blueviolet; */
+}
+
+.class-content-1 {
+  position: relative;
+  display: grid;
+  place-content: center;
+  border-radius: 1rem 2rem;
+  padding: 4rem;
+  grid-column: 2;
+  margin: 1rem;
+  background: var(--color4);
+}
+
+.class-title-background {
+  z-index: 1;
+  position: absolute;
+  justify-self: center;
+  top: 1rem;
+}
+.class-title-background img {
+  min-width: 500px;
+}
+
+.class-subsection-title {
+  flex-wrap: nowrap;
+  z-index: 2;
+  margin: 0px;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+
+  color: var(--color1);
+}
+
+.class-items-list {
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 2rem;
+}
+
+.class-itemsofthelist {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color2);
+  background: var(--color2);
+  color: var(--color4);
+}
+
+.class-itemsofthelist:hover {
+  background: var(--color4);
+  border: 1px solid var(--color1);
+  color: var(--color1);
+  /* columns: 1 /-1; */
+}
+
+/* #2 */
+.class-section-2 {
+  background-color: var(--color7);
+  padding: 0px 0rem;
+  max-width: none;
+  margin: auto;
+}
+
+@media (max-width: 1150px) {
+  .class-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: fit-content;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .class-section-title {
+    font-size: 7rem;
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    text-align: center;
+    margin: 0.5rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1400px) {
+  .class-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: fit-content;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .class-section-title {
+    font-size: 6rem;
+    text-align: center;
+    writing-mode: horizontal-tb;
+    transform: rotate(360deg);
+    margin: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .class-items-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-self: center;
+  }
+
+  .class-subsection-title {
+    font-size: 2.2rem;
+  }
+}
+
+.class-itemsofthelist-blue {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid blue;
+  background: blue;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-blue:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  transition: 0.5s;
+  background: linear-gradient(var(--color5), blue);
+  color: blue;
+}
+
+.class-itemsofthelist-red {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid red;
+  background: red;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-red:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+
+  transition: 0.5s;
+  background: linear-gradient(var(--color5), red);
+  color: red;
+}
+
+.class-itemsofthelist-yellow {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid yellow;
+  background: yellow;
+  color: var(--color3);
+}
+
+.class-itemsofthelist-yellow:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+
+  transition: 0.5s;
+  background: linear-gradient(white, yellow);
+  color: var(--color3);
+}
+
+.class-itemsofthelist-green {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid green;
+  background: green;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-green:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color5), green);
+  color: green;
+}
+
+.class-itemsofthelist-black {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  background: black;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-black:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color5), black);
+  color: black;
+}
+
+.class-itemsofthelist-white {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid white;
+  background: white;
+  color: var(--color3);
+}
+
+.class-itemsofthelist-white:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color5);
+  background: linear-gradient(var(--color5), white);
+}
+
+.class-itemsofthelist-grey {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid grey;
+  background: grey;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-grey:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color5), grey);
+  color: grey;
+}
+
+.class-itemsofthelist-purple {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid purple;
+  background: purple;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-purple:hover {
+  height: 5rem;
+  width: 15rem;
+  transition: 0.5s;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color5), purple);
+  color: purple;
+}
+
+.class-itemsofthelist-brown {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid brown;
+  background: brown;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-brown:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  transition: 0.5s;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color5), brown);
+  color: brown;
+}
+
+.class-itemsofthelist-pink {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid pink;
+  background: pink;
+  color: var(--color3);
+}
+
+.class-itemsofthelist-pink:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+  background: linear-gradient(var(--color4), pink);
+  color: var(--color3);
+  transition: 0.5s;
+}
+
+.class-itemsofthelist-orange {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid orange;
+  background: orange;
+  color: var(--color4);
+}
+
+.class-itemsofthelist-orange:hover {
+  height: 5rem;
+  width: 15rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: 1px solid var(--color4);
+
+  transition: 0.5s;
+  background: linear-gradient(var(--color5), orange);
+  color: orange;
+}

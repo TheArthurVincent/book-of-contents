@@ -1,0 +1,23 @@
+.listadeaulas {
+  /* background-color: aqua; */
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+ol {
+  color: var(--color1);
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  font-size: large;
+  color: var(--color1);
+}
+
+a:hover {
+  font-weight: 600;
+}
+a:visited {
+  color: var(--color2);
+}
